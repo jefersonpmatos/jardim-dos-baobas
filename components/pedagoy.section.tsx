@@ -80,7 +80,7 @@ export function PedagogySection() {
         </motion.div>
       </div>
 
-      <div className="mt-8 grid gap-8 md:grid-cols-4 md:gap-6">
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-4.5">
         {cardsData.map(({ n, t, x }, i) => (
           <motion.div
             key={n}
