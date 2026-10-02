@@ -84,7 +84,8 @@ export function PedagogySection() {
         {cardsData.map(({ n, t, x }, i) => (
           <motion.div
             key={n}
-            className="rounded-xl border border-primary p-6 md:p-8"
+            className="rounded-xl border bg-white/60 p-5 transition-all duration-300 hover:scale-105 md:p-[22px_20px]"
+
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

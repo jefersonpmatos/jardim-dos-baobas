@@ -46,13 +46,14 @@ export function ValuesSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h2 className="text-terracotta text-[clamp(43px,4vw,80px)] leading-tight font-medium tracking-wide">
-            O que faz o<br />
-            <em className="text-terracotta not-italic">nosso jardim</em>?
+            O que <em className="text-primary">cultivamos</em> no
+            <br />
+            nosso jardim?
           </h2>
         </motion.div>
 
         <motion.div
-          className="border-terracotta/30 border-l-2 pl-5 md:pl-6"
+          className="border-l-2 border-primary pl-5 md:pl-6"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -69,7 +70,7 @@ export function ValuesSection() {
         {values.map(([n, t, x], i) => (
           <motion.article
             key={n}
-            className="border-ink/20 min-h-52.5 rounded-xl border bg-white/40 p-5 shadow-xs backdrop-blur-xs md:min-h-58.75 md:p-[22px_20px]"
+            className="rounded-xl border bg-white/60 p-5 transition-all duration-300 hover:scale-105 md:p-[22px_20px]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
