@@ -1,19 +1,37 @@
-import { Button } from "@/components/ui/button"
+import { ContactSection } from "@/components/contact-section"
+import { Footer } from "@/components/footer"
+import { GallerySection } from "@/components/gallery-section"
+import { Header } from "@/components/header"
+import { HeroSection } from "@/components/hero-section"
+import { PedagogySection } from "@/components/pedagoy.section"
+import { SchoolSection } from "@/components/school-section"
+import { ValuesSection } from "@/components/values-section"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Jardim dos Baobás | Escola Waldorf em São Paulo",
+  description:
+    "Escola Waldorf para crianças de 19 meses a 5 anos. Um jardim de infância com natureza, cuidado, ritmo e comunidade.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Jardim dos Baobás | Escola Waldorf",
+    description: "Uma infância com tempo para ser, em contato com a natureza.",
+    type: "website",
+    locale: "pt_BR",
+  },
+}
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <main>
+      <Header />
+      <HeroSection />
+      <PedagogySection />
+      <SchoolSection />
+      <ValuesSection />
+      <GallerySection />
+      <ContactSection />
+      <Footer />
+    </main>
   )
 }
