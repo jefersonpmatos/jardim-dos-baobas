@@ -1,14 +1,14 @@
 import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next"
 import "./globals.css"
-import { Inter, Lora } from "next/font/google"
+import { DynaPuff, Outfit } from "next/font/google"
 import { cn } from "@/lib/utils"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-const lora = Lora({
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-sans" })
+const dyna = DynaPuff({
   subsets: ["latin"],
   variable: "--font-heading",
-  weight: "400",
+  weight: ["400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={cn("font-sans", inter.variable, lora.variable)}
+      className={cn("font-sans", outfit.variable, dyna.variable)}
     >
       <body className="antialiased">
         {children}
