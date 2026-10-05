@@ -52,10 +52,10 @@ export function GallerySection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h2 className="text-[clamp(40px,4vw,80px)] leading-tight font-medium tracking-wide">
+            <h2 className="text-[clamp(40px,4vw,80px)] leading-tight font-bold">
               Pequenos momentos,
               <br />
-              <em className="text-primary">grandes descobertas.</em>
+              grandes descobertas.
             </h2>
           </motion.div>
         </div>
