@@ -39,7 +39,7 @@ export function PedagogySection() {
       className="bg-[#f4ecd0] px-6 py-20 md:px-[9vw] md:py-28"
     >
       <motion.div
-        className="text-terracotta mb-5 text-base font-medium tracking-[.2em] text-muted-foreground uppercase"
+        className="text-terracotta mb-5 text-xs font-medium tracking-[.2em] text-muted-foreground uppercase"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

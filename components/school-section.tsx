@@ -9,7 +9,7 @@ export function SchoolSection() {
   return (
     <section
       id="escola"
-      className="grid bg-emerald-900 text-white md:grid-cols-[1.1fr_.9fr]"
+      className="grid bg-[#6f9a88] text-white md:grid-cols-[1.1fr_.9fr]"
     >
       <motion.div
         className="relative h-80 w-full overflow-hidden md:h-full md:min-h-150"
@@ -43,7 +43,7 @@ export function SchoolSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h2 className="text-[clamp(40px,3vw,76px)] leading-tight font-medium tracking-wide">
+          <h2 className="text-[clamp(40px,3vw,76px)] leading-tight font-bold uppercase">
             Uma escola com
             <br />
             <em className="text-primary not-italic">tempo</em> para ser.
@@ -56,12 +56,12 @@ export function SchoolSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <p className="mt-6 max-w-md text-[15px] leading-[1.75] text-white/75">
+          <p className="mt-6 max-w-md leading-[1.75] text-white/75">
             O Jardim dos Baobás é um lugar para famílias com bebês e crianças
             pequenas encontrarem acolhimento, natureza e uma rotina que respeita
             a infância.
           </p>
-          <p className="mt-3 max-w-md text-[15px] leading-[1.75] text-white/60">
+          <p className="mt-3 max-w-md leading-[1.75] text-white/60">
             Nossa história está sendo construída no encontro entre educadores,
             crianças e famílias. O nome Baobás traduz o que desejamos cultivar:
             raízes profundas, presença e uma árvore capaz de abrigar muitos
@@ -73,7 +73,7 @@ export function SchoolSection() {
             target="_blank"
             rel="noreferrer"
             className={cn(
-              buttonVariants({ variant: "outline", size: "sm" }),
+              buttonVariants({ variant: "outline" }),
               "mt-8 bg-transparent"
             )}
           >
