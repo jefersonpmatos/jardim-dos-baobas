@@ -12,7 +12,7 @@ export function ContactSection() {
     >
       <div className="max-w-200">
         <motion.div
-          className="mb-4 text-xs font-medium tracking-[.2em] text-primary uppercase"
+          className="mb-4 text-xs font-medium tracking-[.2em] text-gray-800 uppercase"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -27,10 +27,10 @@ export function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h2 className="text-[clamp(40px,3vw,76px)] leading-tight font-medium tracking-wide text-black">
-            O próximo passo
+          <h2 className="text-[clamp(40px,3vw,76px)] leading-tight font-bold text-black uppercase">
+            Venha conhecer
             <br />
-            pode ser uma <em className="text-primary not-italic">conversa.</em>
+            <span className="text-primary">o Jardim dos Baobá</span>
           </h2>
         </motion.div>
 
@@ -41,8 +41,8 @@ export function ContactSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <p className="my-7 max-w-96.25 text-[15px] leading-[1.75] text-muted-foreground">
-            Quer conhecer a escola, tirar dúvidas ou agendar uma visita? Estamos
-            aqui para acolher você.
+            Agende uma visita e venha sentir de perto o ritmo, o cuidado e a
+            natureza da nossa escola.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
